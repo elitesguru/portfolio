@@ -23,15 +23,15 @@ const Resume = () => {
       description: "Leading development of scalable web applications, mentoring junior developers, and implementing best practices."
     },
     {
-      title: "Full Stack Developer",
+      title: "Data scientist",
       company: "Digital Solutions Inc.",
-      period: "2020 - 2022",
+      period: "2021 - 2024",
       description: "Developed and maintained multiple client projects using React, Node.js, and cloud technologies."
     },
     {
-      title: "Frontend Developer",
+      title: "Machine Learning Developer",
       company: "Startup Hub",
-      period: "2019 - 2020",
+      period: "2022 - 2025",
       description: "Created responsive user interfaces and collaborated with design teams to deliver exceptional user experiences."
     }
   ];
@@ -102,7 +102,7 @@ const Resume = () => {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground mt-4">
-                Last updated: December 2024 • PDF Format • 2 pages
+                Last updated: December 2025 • PDF Format • 2 pages
               </p>
             </CardContent>
           </Card>
