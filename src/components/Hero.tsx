@@ -38,7 +38,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-2">
-              Full Stack Developer
+              Software Engineer
             </p>
             <p className="text-lg text-muted-foreground">
               Building digital experiences with modern technologies
