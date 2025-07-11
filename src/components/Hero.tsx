@@ -56,14 +56,17 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="animate-fade-in-up flex items-center justify-center space-x-4" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+            <a href="https://github.com/elitesguru" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
+              <a href="https://linkedin.com/in/johnbarack" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </Button>
+                <a href="mailto:johnbarack10@gmail.com" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
               <Mail className="w-4 h-4 mr-2" />
               Email
