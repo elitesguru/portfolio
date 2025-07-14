@@ -61,7 +61,7 @@ const Hero = () => {
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
-              <a href="https://linkedin.com/in/johnbarack" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/john-barack-240056233" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
