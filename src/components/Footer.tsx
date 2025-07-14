@@ -17,9 +17,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/elitesguru', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/john-barack-240056233/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:johnbarack10@gmail.com', label: 'Email' }
   ];
 
   return (
@@ -29,10 +29,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold bg-hero-gradient bg-clip-text text-transparent">
-              Your Portfolio
+              My Portfolio
             </h3>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Passionate full-stack developer creating innovative digital solutions 
+              Passionate Software Engineer creating innovative digital solutions 
               with modern technologies and best practices.
             </p>
             <div className="flex space-x-4">
@@ -70,8 +70,8 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">Get In Touch</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <p>your.email@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>New York, NY</p>
+              <p>+254 (703) 750-808</p>
+              <p>Nairobi, Kenya</p>
             </div>
             <Button
               onClick={scrollToTop}
@@ -90,7 +90,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Hale Jaunire. All rights reserved.
           </p>
           <div className="flex items-center space-x-1 text-sm text-muted-foreground">
             <span>Made with</span>
