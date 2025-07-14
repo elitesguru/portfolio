@@ -8,31 +8,32 @@ const Resume = () => {
     { name: "JavaScript", level: 95 },
     { name: "React", level: 90 },
     { name: "Node.js", level: 85 },
-    { name: "Java", level: 88 },
+    { name: "TypeScript", level: 88 },
     { name: "Python", level: 80 },
     { name: "AWS", level: 75 },
     { name: "Docker", level: 70 },
-    { name: "MongoDB", level: 85 }
+    { name: "MongoDB", level: 85 },
+    { name: "Java", level: 70 }
   ];
 
   const experience = [
     {
       title: "Senior Full Stack Developer",
       company: "Tech Innovation Co.",
-      period: "2022 - Present",
+      period: "2024 - Present",
       description: "Leading development of scalable web applications, mentoring junior developers, and implementing best practices."
     },
     {
       title: "Data scientist",
       company: "Digital Solutions Inc.",
-      period: "2021 - 2024",
-      description: "Developed and maintained multiple client projects using React, Node.js, and cloud technologies."
+      period: "2023 - 2024",
+      description: "Developed and maintained multiple client projects using Python, SQL, and R technologies."
     },
     {
       title: "Machine Learning Developer",
-      company: "Startup Hub",
+      company: "SafetyPlus Consulting Limited Company",
       period: "2022 - 2025",
-      description: "Created responsive user interfaces and collaborated with design teams to deliver exceptional user experiences."
+      description: "Developed and deployed machine learning models and collaborated with cross-functional teams to deliver intelligent, data-driven user experiences."
     }
   ];
 
@@ -41,7 +42,7 @@ const Resume = () => {
       degree: "Bachelor of Science in Software Engineering",
       school: "Kisii University",
       year: "2025",
-      gpa: "3.8/4.0"
+      gpa: "3.4/4.0"
     }
   ];
 
