@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-hero-gradient opacity-5" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary-glow))_0%,transparent_50%)]" />
-      
+
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Profile Picture */}
@@ -57,20 +57,23 @@ const Hero = () => {
           {/* Social Links */}
           <div className="animate-fade-in-up flex items-center justify-center space-x-4" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
             <a href="https://github.com/elitesguru" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </Button>
-              <a href="https://www.linkedin.com/in/john-barack-240056233" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
-              <Linkedin className="w-4 h-4 mr-2" />
-              LinkedIn
-            </Button>
-                <a href="mailto:johnbarack10@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
-              <Mail className="w-4 h-4 mr-2" />
-              Email
-            </Button>
+              <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/john-barack-240056233" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
+                <Linkedin className="w-4 h-4 mr-2" />
+                LinkedIn
+              </Button>
+            </a>
+            <a href="mailto:johnbarack10@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="hover:scale-105 transition-transform duration-300">
+                <Mail className="w-4 h-4 mr-2" />
+                Email
+              </Button>
+            </a>
           </div>
 
           {/* CTA Button */}
