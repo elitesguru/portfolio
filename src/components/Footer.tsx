@@ -69,7 +69,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Get In Touch</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>your.email@example.com</p>
+              <p>johnbarack10@gmail.com</p>
               <p>+254 (703) 750-808</p>
               <p>Nairobi, Kenya</p>
             </div>
