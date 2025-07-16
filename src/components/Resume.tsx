@@ -49,11 +49,13 @@ const Resume = () => {
   const handleDownload = () => {
     // In a real app, this would trigger an actual resume download
     console.log('Downloading resume...');
+    window.open('/john-barack-resume.pdf', '_blank');
   };
 
   const handlePreview = () => {
     // In a real app, this would open a preview modal or new tab
     console.log('Opening resume preview...');
+    window.open('/john-barack-resume.pdf', '_blank');
   };
 
   return (
