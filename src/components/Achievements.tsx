@@ -23,7 +23,7 @@ const Achievements = () => {
       date: "2023",
       description: "Comprehensive program covering front-end and back-end development with modern technologies.",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
-      certificateUrl: "#",
+      certificateUrl: "/assets/fullstack-certificate.png",
       verificationUrl: "#",
       skills: ["React", "Node.js", "Databases", "API Development"]
     },
@@ -40,15 +40,16 @@ const Achievements = () => {
     },
     {
       id: 4,
-      title: "React Developer Certification",
-      issuer: "React Training",
-      date: "2022",
-      description: "Advanced certification in React development including hooks, context, and performance optimization.",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
-      certificateUrl: "#",
+      title: "Machine Learning & AI Development",
+      issuer: "App Brewery (Angela Yu)",
+      date: "2025",
+      description: "Awarded for excellence in developing real-world ML & AI solutions.",
+      image: "https://images.unsplash.com/photo-1581093588401-9cc5af6a3492?w=400&h=300&fit=crop",
+      certificateUrl: "/assets/ml-ai-certificate.png", // ← this should match your actual image filename
       verificationUrl: "#",
-      skills: ["React", "Redux", "Testing", "Performance"]
+      skills: ["ML", "AI", "Python", "TensorFlow"]
     }
+
   ];
 
   const handleDownload = (certificateUrl: string, title: string) => {
