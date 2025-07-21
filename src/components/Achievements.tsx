@@ -44,7 +44,7 @@ const Achievements = () => {
       issuer: "App Brewery (Angela Yu)",
       date: "2025",
       description: "Awarded for excellence in developing real-world ML & AI solutions.",
-      image: "https://images.unsplash.com/photo-1581093588401-9cc5af6a3492?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
       certificateUrl: "/assets/ml-ai-certificate.png", // ← this should match your actual image filename
       verificationUrl: "#",
       skills: ["ML", "AI", "Python", "TensorFlow"]
