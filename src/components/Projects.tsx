@@ -11,7 +11,7 @@ const Projects = () => {
       description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "TailwindCSS"],
-      liveUrl: "#",
+      liveUrl: "https://barack-boutique-market.lovable.app",
       githubUrl: "#",
       featured: true
     },
@@ -42,7 +42,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       technologies: ["React", "TailwindCSS", "Framer Motion", "Vite"],
       liveUrl: "https://johnbarack.netlify.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/elitesguru/portfolio",
       featured: true
     }
   ];
