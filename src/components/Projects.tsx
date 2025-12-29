@@ -27,12 +27,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Ghost Asistant",
       description: "A responsive weather dashboard that provides current weather conditions, forecasts, and historical data with beautiful visualizations.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://phantom-voice-assist.netlify.app/",
+      githubUrl: "https://github.com/yourusername/ghost-assistant",
       featured: false
     },
     {
