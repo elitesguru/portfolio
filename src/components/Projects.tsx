@@ -105,27 +105,38 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
-                    Live Demo
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                  >
-                    <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
-                    Code
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+  <a
+    href={project.liveUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1"
+  >
+    <Button 
+      variant="outline" 
+      size="sm" 
+      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+    >
+      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
+      Live Demo
+    </Button>
+  </a>
+  
+  <a
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1"
+  >
+    <Button 
+      variant="outline" 
+      size="sm" 
+      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+    >
+      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
+      Code
+    </Button>
+  </a>
+</div>
 
         <div className="text-center mt-12">
           <Button 
