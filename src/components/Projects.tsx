@@ -12,7 +12,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "TailwindCSS"],
       liveUrl: "https://barack-boutique-market.lovable.app",
-      githubUrl: "#",
+      githubUrl: "https://github.com/elitesguru", // Updated from "#"
       featured: true
     },
     {
@@ -22,17 +22,17 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
       technologies: ["React", "TypeScript", "Socket.io", "Express", "MongoDB"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/elitesguru", // Updated from "#"
       featured: false
     },
     {
       id: 3,
-      title: "Ghost Asistant",
+      title: "Ghost Assistant",
       description: "A responsive weather dashboard that provides current weather conditions, forecasts, and historical data with beautiful visualizations.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
       liveUrl: "https://phantom-voice-assist.netlify.app/",
-      githubUrl: "https://github.com/yourusername/ghost-assistant",
+      githubUrl: "https://github.com/elitesguru", // Updated from "yourusername"
       featured: false
     },
     {
@@ -46,6 +46,15 @@ const Projects = () => {
       featured: true
     }
   ];
+
+  // Function to handle link clicks
+  const handleLinkClick = (url, event) => {
+    if (url === "#" || !url) {
+      event.preventDefault();
+      return;
+    }
+    // Anchor tag will handle the rest with target="_blank"
+  };
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -105,38 +114,46 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-  <a
-    href={project.liveUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1"
-  >
-    <Button 
-      variant="outline" 
-      size="sm" 
-      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-    >
-      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
-      Live Demo
-    </Button>
-  </a>
-  
-  <a
-    href={project.githubUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1"
-  >
-    <Button 
-      variant="outline" 
-      size="sm" 
-      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-    >
-      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
-      Code
-    </Button>
-  </a>
-</div>
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                    onClick={(e) => handleLinkClick(project.liveUrl, e)}
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                      disabled={project.liveUrl === "#"}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
+                      {project.liveUrl === "#" ? "Coming Soon" : "Live Demo"}
+                    </Button>
+                  </a>
+                  
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                    onClick={(e) => handleLinkClick(project.githubUrl, e)}
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                      disabled={project.githubUrl === "#"}
+                    >
+                      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform duration-300" />
+                      Code
+                    </Button>
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
 
         <div className="text-center mt-12">
           <Button 
@@ -144,6 +161,7 @@ const Projects = () => {
             size="lg"
             className="hover:scale-105 transition-transform duration-300 animate-fade-in-up"
             style={{ animationDelay: '0.6s', animationFillMode: 'both' }}
+            onClick={() => window.open('https://github.com/elitesguru', '_blank', 'noopener,noreferrer')}
           >
             <Github className="w-4 h-4 mr-2" />
             View All Projects on GitHub
