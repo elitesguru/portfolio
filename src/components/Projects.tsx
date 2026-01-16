@@ -11,7 +11,7 @@ const Projects = () => {
       description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "TailwindCSS"],
-      liveUrl: "https://barack-boutique-market.lovable.app",
+      liveUrl: "https://beautyhub-global-vhs7894.public.builtwithrocket.new/user-dashboard",
       githubUrl: "https://github.com/elitesguru", // Updated from "#"
       featured: true
     },
