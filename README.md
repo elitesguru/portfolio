@@ -1,54 +1,104 @@
-# Welcome to your Hale Jaunire project
+# Hale Jaunire Project
 
-## Project info
+A modern web application developed by John Barack using React, TypeScript, Vite, Tailwind CSS, and shadcn-ui. The project focuses on delivering a fast, responsive, and user-friendly experience while following modern frontend development practices.
 
+## Features
 
-## How can I edit this code?
+* Responsive user interface
+* Modern component-based architecture
+* Fast development and build process with Vite
+* Type-safe development using TypeScript
+* Clean and customizable UI with shadcn-ui
+* Mobile-friendly design with Tailwind CSS
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use your preferred IDE**
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn-ui
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+Ensure you have the following installed:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Node.js (v18 or later)
+* npm
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+Clone the repository:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/elitesguru/<repository-name>.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd <repository-name>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```text
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+## Build for Production
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+Preview the production build:
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── hooks/
+├── lib/
+├── assets/
+└── styles/
+
+public/
+package.json
+vite.config.ts
+README.md
+```
+
+## Contributing
+
+Contributions, suggestions, and improvements are welcome. Feel free to fork the repository and submit a pull request.
+
+## Author
+
+John Barack
+
+GitHub: https://github.com/elitesguru/portfolio
+
+## License
+
+This project is released for educational and portfolio purposes.
