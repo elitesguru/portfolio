@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
               <span className="bg-hero-gradient bg-clip-text text-transparent">
-                John Barack
+                Barack John
               </span>
             </h1>
             <div className="flex items-center justify-center gap-2 flex-wrap">
@@ -70,8 +70,8 @@ const Hero = () => {
             <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 I'm a passionate Software Engineer specializing in building exceptional digital experiences. 
-                With a strong foundation in <span className="text-primary font-medium">full-stack development</span> and 
-                <span className="text-primary font-medium"> cloud computing</span>, I turn complex problems into 
+                With a strong foundation in <span className="text-primary font-medium">Data Science</span> and 
+                <span className="text-primary font-medium"> Cyber Security</span>, I turn complex problems into 
                 elegant, user-centric solutions that drive business growth.
               </p>
             </div>
