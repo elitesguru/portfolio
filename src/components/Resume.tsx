@@ -1,19 +1,27 @@
-import { Download, Eye, FileText, Star, Briefcase, GraduationCap } from 'lucide-react';
+import { Download, Eye, FileText, Star, Briefcase, GraduationCap, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
 const Resume = () => {
-  const skills = [
+  // Programming Languages for circular cards
+  const programmingLanguages = [
     { name: "JavaScript", level: 95 },
-    { name: "React", level: 90 },
-    { name: "Node.js", level: 85 },
+    { name: "Python", level: 90 },
+    { name: "Java", level: 85 },
     { name: "TypeScript", level: 88 },
-    { name: "Python", level: 80 },
-    { name: "AWS", level: 75 },
-    { name: "Docker", level: 70 },
-    { name: "MongoDB", level: 85 },
-    { name: "Java", level: 70 }
+    { name: "Shell", level: 75 },
+    { name: "SQL", level: 80 }
+  ];
+
+  // Security Tools for radar chart
+  const securityTools = [
+    { tool: "Nmap", level: 85 },
+    { tool: "Wireshark", level: 80 },
+    { tool: "Burpsuite", level: 75 },
+    { tool: "Metasploit", level: 70 },
+    { tool: "Nessus", level: 65 }
   ];
 
   const experience = [
@@ -47,16 +55,19 @@ const Resume = () => {
   ];
 
   const handleDownload = () => {
-    // In a real app, this would trigger an actual resume download
     console.log('Downloading resume...');
     window.open('/john-barack-resume.pdf', '_blank');
   };
 
   const handlePreview = () => {
-    // In a real app, this would open a preview modal or new tab
     console.log('Opening resume preview...');
     window.open('/john-barack-resume.pdf', '_blank');
   };
+
+  // Color palette for circular cards
+  const colors = [
+    '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
+  ];
 
   return (
     <section id="resume" className="py-20 bg-muted/30">
@@ -134,7 +145,7 @@ const Resume = () => {
               </CardContent>
             </Card>
 
-            {/* Skills */}
+            {/* Skills Section - Circular Cards + Radar Chart */}
             <Card className="border-0 shadow-soft bg-card-gradient backdrop-blur-sm animate-slide-in-right">
               <CardHeader>
                 <div className="flex items-center space-x-2">
@@ -142,24 +153,52 @@ const Resume = () => {
                   <CardTitle>Technical Skills</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
-                {skills.map((skill, index) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-muted rounded-full h-2">
-                      <div 
-                        className="bg-hero-gradient h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{ 
-                          width: `${skill.level}%`,
-                          animationDelay: `${index * 0.1}s`
-                        }}
-                      />
-                    </div>
+              <CardContent className="space-y-6">
+                {/* Circular Cards for Programming Languages */}
+                <div>
+                  <h4 className="text-sm font-semibold text-muted-foreground mb-3">Programming Languages</h4>
+                  <div className="grid grid-cols-3 gap-4">
+                    {programmingLanguages.map((lang, index) => (
+                      <div key={lang.name} className="flex flex-col items-center group">
+                        <div 
+                          className="relative w-20 h-20 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110"
+                          style={{
+                            background: `conic-gradient(${colors[index % colors.length]} ${lang.level}%, #e5e7eb ${lang.level}%)`,
+                            padding: '4px'
+                          }}
+                        >
+                          <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                            <span className="text-sm font-bold text-foreground">{lang.level}%</span>
+                          </div>
+                        </div>
+                        <span className="text-xs text-center mt-2 font-medium text-muted-foreground">{lang.name}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+
+                {/* Radar Chart for Security Tools */}
+                <div>
+                  <h4 className="text-sm font-semibold text-muted-foreground mb-3 flex items-center">
+                    <Shield className="w-4 h-4 mr-1 text-primary" />
+                    Security Tools
+                  </h4>
+                  <div className="w-full h-56">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <RadarChart data={securityTools} outerRadius={70}>
+                        <PolarGrid stroke="#e5e7eb" />
+                        <PolarAngleAxis dataKey="tool" tick={{ fontSize: 10, fill: '#6b7280' }} />
+                        <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 9, fill: '#6b7280' }} />
+                        <Radar
+                          dataKey="level"
+                          stroke="#8884d8"
+                          fill="#8884d8"
+                          fillOpacity={0.6}
+                        />
+                      </RadarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
