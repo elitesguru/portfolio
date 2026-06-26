@@ -7,14 +7,14 @@ const Achievements = () => {
   const achievements = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      title: "Diploma in Cyber Security",
+      issuer: "Aison Learning",
       date: "2024",
       description: "Professional-level certification demonstrating expertise in designing distributed systems on AWS.",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
       certificateUrl: "#",
       verificationUrl: "#",
-      skills: ["Cloud Architecture", "AWS Services", "Security", "Scalability"]
+      skills: ["Cloud security", "Networking", "Security", "Scalability"]
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const Achievements = () => {
     },
     {
       id: 3,
-      title: "Google Cloud Professional",
+      title: "Data Science",
       issuer: "Google Cloud Platform",
       date: "2023",
       description: "Certification in designing, building, and managing cloud solutions using Google Cloud technologies.",
