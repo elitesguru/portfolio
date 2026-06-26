@@ -56,7 +56,7 @@ const Resume = () => {
 
   const handleDownload = () => {
     console.log('Downloading resume...');
-    window.open('/john-barack-resume.pdf', '_blank');
+    window.open('/Barack_John_CV.pdf', '_blank');
   };
 
   const handlePreview = () => {
