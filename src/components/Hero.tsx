@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <span className="text-xl md:text-2xl text-muted-foreground">Software Engineer</span>
               <span className="hidden sm:inline text-muted-foreground">•</span>
-              <span className="text-lg md:text-xl text-primary font-medium">Full Stack Developer</span>
+              <span className="text-lg md:text-xl text-primary font-medium">Data Science | Cyber Security</span>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mt-2">
               Crafting scalable web solutions with modern technologies
