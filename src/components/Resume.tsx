@@ -26,7 +26,7 @@ const Resume = () => {
 
   const experience = [
     {
-      title: "Senior Full Stack Developer",
+      title: "Junior Full Stack Developer",
       company: "Tech Innovation Co.",
       period: "2024 - Present",
       description: "Leading development of scalable web applications, mentoring junior developers, and implementing best practices."
