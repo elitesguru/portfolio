@@ -12,7 +12,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       technologies: ["Streamlit", "Python", "Jupyter Notebook"],
       liveUrl: "https://barack.streamlit.app/",
-      githubUrl: "https://github.com/elitesguru/Data Science", // Updated from "#"
+      githubUrl: "https://github.com/elitesguru/Data-Science", // Updated from "#"
       featured: true
     },
     {
