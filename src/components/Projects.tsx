@@ -8,7 +8,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Data Science - Supply Chain pulse app",
-      description: "**SupplyChain Pulse** is an interactive Streamlit dashboard that aggregates, analyzes, and visualizes supply chain job market data while providing AI-powered resume matching to recommend relevant positions.",
+      description: "SupplyChain Pulse** is an interactive Streamlit dashboard that aggregates, analyzes, and visualizes supply chain job market data while providing AI-powered resume matching to recommend relevant positions.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
       technologies: ["Streamlit", "Python", "Jupyter Notebook"],
       liveUrl: "https://barack.streamlit.app/",
