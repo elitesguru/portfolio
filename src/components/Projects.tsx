@@ -7,12 +7,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
+      title: "Data Science - Supply Chain pulse app",
+      description: "**SupplyChain Pulse** is an interactive Streamlit dashboard that aggregates, analyzes, and visualizes supply chain job market data while providing AI-powered resume matching to recommend relevant positions.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "TailwindCSS"],
-      liveUrl: "https://beautyhub-global-vhs7894.public.builtwithrocket.new/user-dashboard",
-      githubUrl: "https://github.com/elitesguru", // Updated from "#"
+      technologies: ["Streamlit", "Python", "Jupyter Notebook"],
+      liveUrl: "https://barack.streamlit.app/",
+      githubUrl: "https://github.com/elitesguru/Data Science", // Updated from "#"
       featured: true
     },
     {
